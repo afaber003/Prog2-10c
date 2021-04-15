@@ -43,28 +43,28 @@ void WordLadder::outputLadder(const string &start, const string &end, const stri
         //checks starting word
     for (list<string>::iterator i = dict.begin(); i != dict.end(); i++){
         if (start == *i){
-            found == true;
+            found = true;
             break;
         }
     }
     if (start == *dict.end()){
-        found == true;
+        found = true;
     }
     if (found == false){
         cout << "Starting word was not found in Dictionary" << endl;
         return;
     }
-    found == false;
+    found = false;
 
         //checks ending word
     for (list<string>::iterator i = dict.begin(); i != dict.end(); i++){
         if (end == *i){
-            found == true;
+            found = true;
             break;
         }
     }
     if (start == *dict.end()){
-        found == true;
+        found = true;
     }
     if (found == false){
         cout << "Ending word was not found in Dictionary" << endl;
