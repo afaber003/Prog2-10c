@@ -54,7 +54,8 @@ void WordLadder::outputLadder(const string &start, const string &end, const stri
         cout << "Starting word was not found in Dictionary" << endl;
         return;
     }
-    found = false;
+
+    found = false; // resets the "found" bool
 
         //checks ending word
     for (list<string>::iterator i = dict.begin(); i != dict.end(); i++){
