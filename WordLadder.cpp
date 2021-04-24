@@ -141,14 +141,5 @@ void WordLadder::outputLadder(const string &start, const string &end, const stri
     queue.pop_front();
 
   }
-  answerFile << "No Word Ladder Found."; 
-  
-
-
-
-
-
-
-
-
+  answerFile << "No Word Ladder Found."; // case for when all else fails
 }
