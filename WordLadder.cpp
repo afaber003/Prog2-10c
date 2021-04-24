@@ -31,9 +31,9 @@ void WordLadder::outputLadder(const string &start, const string &end, const stri
 
     //creating and opening answer file
     ofstream answerFile;
-    answerFile.open("answerFile.txt");
+    answerFile.open(outputFile);
     if (!answerFile.is_open()){
-        cout << "Error Opening answerFile.txt" << endl;
+        cout << "Error Opening " << outputFile << endl;
         return;
     }
 
@@ -70,7 +70,8 @@ void WordLadder::outputLadder(const string &start, const string &end, const stri
     if (found == false){
         cout << "Ending word was not found in Dictionary" << endl;
         return;
-    }    
+    }
+        
 
     // Actual "Word-Ladder" Begins After This //
 
