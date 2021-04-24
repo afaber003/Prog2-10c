@@ -51,7 +51,8 @@ void WordLadder::outputLadder(const string &start, const string &end, const stri
       return;
   }
 
-  if (start == end){
+    //case for if start and end word are the same.
+  if (start == end){ 
       answerFile << start;
       return;
   }
@@ -100,7 +101,6 @@ void WordLadder::outputLadder(const string &start, const string &end, const stri
   // Actual "Word-Ladder Finding" Begins After This //
 
 
-  list<string> name(4);
   list<string> first;
   first.push_back(start);
 
