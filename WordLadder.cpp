@@ -98,7 +98,7 @@ void WordLadder::outputLadder(const string &start, const string &end, const stri
         *temp = queue.front();
         temp->push_back(wordindex);
         queue.push_back(*temp);
-        wordstodelete.push_back(wordindex);
+        dict.remove(wordindex); //This might remove the word at wordindex
       }
 
     }
