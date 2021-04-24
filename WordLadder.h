@@ -14,6 +14,8 @@ class WordLadder {
   private:
     list<string> dict;        //list of possible words in ladder
 
+    bool isOneLetterOff(const string& start, const string& end); //helper function
+
   public:
     /* Passes in the name of a file that contains a dictionary of 5-letter words.
        Fills the list (dict) with the words within this file. 
