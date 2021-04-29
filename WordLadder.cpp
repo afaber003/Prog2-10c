@@ -117,6 +117,7 @@ void WordLadder::outputLadder(const string &start, const string &end, const stri
     // for every word in dict, check it against the tempword
     for (string wordindex : dict){ 
       if (isOneLetterOff(wordindex, tempword)){ //if wordindex is one letter away from tempword
+        cout << wordindex << endl;
         if(isOneLetterOff(wordindex, end)){     //if wordindex is also one letter away from the end word (solved problem)
             for (string words : queue.front()){
             answerFile << words << endl;
